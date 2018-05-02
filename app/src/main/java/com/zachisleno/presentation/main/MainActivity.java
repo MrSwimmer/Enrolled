@@ -76,6 +76,7 @@ public class MainActivity extends AppCompatActivity {
                 break;
             case R.id.nav_tests:
                 Toast.makeText(this, "Тесты пока не доступны", Toast.LENGTH_SHORT).show();
+                break;
             case R.id.nav_settings:
                 router.replaceTopController(RouterTransaction.with(new SettingsController()));
                 break;

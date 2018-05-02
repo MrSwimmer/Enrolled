@@ -1,7 +1,5 @@
 package com.zachisleno.presentation.intro.auth;
 
-import android.util.Log;
-
 import com.hannesdorfmann.mosby3.mvp.MvpBasePresenter;
 import com.zachisleno.App;
 import com.zachisleno.domain.interactor.SettingsService;
@@ -17,9 +15,8 @@ public class AuthPresenter extends MvpBasePresenter<AuthContract.View> implement
     }
 
     @Override
-    public void checkUser() {
-        String test = settingsService.getTest();
-        Log.i("code", test);
+    public void checkUser(String first, String second, String third) {
+        settingsService.initUser("id", first, second, third);
         getView().gotoMain();
     }
 }

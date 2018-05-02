@@ -10,6 +10,6 @@ public interface AuthContract {
     }
 
     interface Presenter extends MvpPresenter<View> {
-        void checkUser();
+        void checkUser(String first, String second, String third);
     }
 }

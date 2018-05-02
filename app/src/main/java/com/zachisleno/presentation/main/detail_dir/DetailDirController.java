@@ -73,5 +73,6 @@ public class DetailDirController extends MvpController<DetailDirContract.View, D
         comp.setText(detailDir.getComp());
         des.setText(detailDir.getDes());
         chance.setText(detailDir.getChance());
+        chance.setTextColor(detailDir.getColor());
     }
 }

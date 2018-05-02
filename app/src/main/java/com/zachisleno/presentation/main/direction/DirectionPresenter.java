@@ -10,10 +10,6 @@ public class DirectionPresenter extends MvpBasePresenter<DirectionContract.View>
 
     public static Dir curDir;
 
-    DirectionPresenter() {
-
-    }
-
     @Override
     public void setRecyclerData() {
         ArrayList<Dir> dirs = new ArrayList<>();

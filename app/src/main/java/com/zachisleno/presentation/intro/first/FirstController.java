@@ -4,6 +4,7 @@ import android.support.annotation.NonNull;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.Toast;
 
 import com.bluelinelabs.conductor.Controller;
 import com.bluelinelabs.conductor.RouterTransaction;
@@ -27,6 +28,11 @@ public class FirstController extends Controller {
     @OnClick(R.id.first_yes)
     void onYesClick() {
         getRouter().replaceTopController(RouterTransaction.with(new AuthController()));
+    }
+
+    @OnClick(R.id.first_yes)
+    void onNoClick() {
+        Toast.makeText(getActivity(), "Эти функции пока не доступны", Toast.LENGTH_SHORT).show();
     }
 
 }

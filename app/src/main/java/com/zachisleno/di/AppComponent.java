@@ -3,8 +3,10 @@ package com.zachisleno.di;
 import com.zachisleno.di.module.APIModule;
 import com.zachisleno.di.module.SharedPreferencesModule;
 import com.zachisleno.presentation.intro.auth.AuthPresenter;
+import com.zachisleno.presentation.intro.splash.SplashController;
 import com.zachisleno.presentation.main.detail_dir.DetailDirPresenter;
 import com.zachisleno.presentation.main.direction.recycler.DirAdapter;
+import com.zachisleno.presentation.main.settings.SettingsController;
 import com.zachisleno.presentation.main.settings.SettingsPresenter;
 import com.zachisleno.presentation.main.university.UniversityPresenter;
 import com.zachisleno.presentation.main.university.recycler.UniAdapter;
@@ -28,4 +30,8 @@ public interface AppComponent {
     void inject(DetailDirPresenter detailDirPresenter);
 
     void inject(SettingsPresenter settingsPresenter);
+
+    void inject(SettingsController settingsController);
+
+    void inject(SplashController splashController);
 }

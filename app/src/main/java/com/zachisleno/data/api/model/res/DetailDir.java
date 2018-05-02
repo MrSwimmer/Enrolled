@@ -9,8 +9,9 @@ public class DetailDir {
     String places;
     String pos;
     String posOrig;
+    int color;
 
-    public DetailDir(String name, String des, String chance, String doc, String comp, String places, String pos, String posOrig) {
+    public DetailDir(String name, String des, String chance, String doc, String comp, String places, String pos, String posOrig, int color) {
         this.name = name;
         this.des = des;
         this.chance = chance;
@@ -19,9 +20,15 @@ public class DetailDir {
         this.places = places;
         this.pos = pos;
         this.posOrig = posOrig;
+        this.color = color;
     }
 
-    public DetailDir() {
+    public int getColor() {
+        return color;
+    }
+
+    public void setColor(int color) {
+        this.color = color;
     }
 
     public String getName() {

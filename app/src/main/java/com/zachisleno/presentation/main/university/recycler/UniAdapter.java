@@ -1,5 +1,6 @@
 package com.zachisleno.presentation.main.university.recycler;
 
+import android.annotation.SuppressLint;
 import android.content.Context;
 import android.support.v7.widget.RecyclerView;
 import android.view.LayoutInflater;
@@ -37,6 +38,7 @@ public class UniAdapter extends RecyclerView.Adapter<UniViewHolder> {
         return new UniViewHolder(v);
     }
 
+    @SuppressLint("ResourceAsColor")
     @Override
     public void onBindViewHolder(UniViewHolder holder, int position) {
         Uni uni = unis.get(position);
@@ -46,6 +48,12 @@ public class UniAdapter extends RecyclerView.Adapter<UniViewHolder> {
                 .placeholder(R.color.transparent)
                 .into(holder.image);
         holder.chance.setText(uni.getChance()+"%");
+        if(uni.getChance()<60)
+            holder.chance.setTextColor(R.color.red);
+        else if(uni.getChance()<80)
+            holder.chance.setTextColor(R.color.main_orange);
+        else
+            holder.chance.setTextColor(R.color.green);
         holder.bestDirection.setText("Лучшее направление: " + uni.getBestDir());
         holder.name.setText(uni.getName());
         holder.numDirection.setText("Направлений: " + uni.getNumDirs());

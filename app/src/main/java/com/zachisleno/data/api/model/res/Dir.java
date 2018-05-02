@@ -3,8 +3,7 @@ package com.zachisleno.data.api.model.res;
 import com.google.gson.annotations.Expose;
 import com.google.gson.annotations.SerializedName;
 
-public class Dir
-{
+public class Dir {
     @SerializedName("name")
     @Expose
     private String name;
@@ -21,13 +20,11 @@ public class Dir
         this.chance = chance;
     }
 
-    public String getName ()
-    {
+    public String getName() {
         return name;
     }
 
-    public void setName (String name)
-    {
+    public void setName(String name) {
         this.name = name;
     }
 
@@ -47,9 +44,4 @@ public class Dir
         this.chance = chance;
     }
 
-    @Override
-    public String toString()
-    {
-        return "ClassPojo [name = "+name+", original = "+original+", chance = "+chance+"]";
-    }
 }
