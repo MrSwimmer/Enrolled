@@ -1,0 +1,22 @@
+<resources>
+
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.AppCompat.Light.DarkActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+        <item name="android:colorBackground">@color/background</item>
+    </style>
+    <style name="NavigationDrawerStyle">
+        <item name="android:textSize">18sp</item><!-- text size in menu-->
+        <item name="android:listPreferredItemHeightSmall">60dp</item><!-- item size in menu-->
+    </style>
+
+    <style name="EnrolledTheme" parent="Theme.Design.Light.NoActionBar" >
+        <item name="android:colorBackground">@color/background</item>
+        <item name="android:colorForeground">@color/black</item>
+        <item name="colorPrimaryDark">@color/main_orange</item>
+        <item name="colorAccent">@color/main_orange</item>
+    </style>
+</resources>

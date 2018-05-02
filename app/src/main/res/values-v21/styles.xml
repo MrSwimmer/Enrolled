@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <style name="EnrolledTheme" parent="Theme.Design.Light.NoActionBar">
+        <item name="android:colorBackground">@color/background</item>
+        <item name="android:colorForeground">@color/black</item>
+        <item name="colorPrimaryDark">@color/main_orange</item>
+        <item name="android:statusBarColor">@color/main_orange</item>
+        <item name="colorAccent">@color/main_orange</item>
+    </style>
+</resources>
